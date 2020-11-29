@@ -4,6 +4,10 @@ body {
   color: #444444;
 }
 
+@font-face {
+  font-family: 'GODOFWAR';
+  src: url("./GODOFWAR.TTF");
+}
 
 a {
   color: #47b2e4;
@@ -545,6 +549,11 @@ section {
   padding-bottom: 30px;
 }
 
+@font-face {
+  font-family: 'GODOFWAR';
+  src: url("./GODOFWAR.TTF");
+}
+
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
@@ -553,6 +562,7 @@ section {
   padding-bottom: 20px;
   position: relative;
   color: #37517e;
+  font-family: "GODOFWAR";
 }
 
 .section-title h2::before {
@@ -1980,6 +1990,7 @@ section {
 
   .backgroundCinza {
     background-color: #DCDCDC;
+    /* background-color: #fff; */
 }
 
   .textBlack {
