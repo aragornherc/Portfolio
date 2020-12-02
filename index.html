@@ -272,7 +272,7 @@
           </div>
 
           <div class="col-lg-6 col-md-6 portfolio-item filter-games">
-            <embed src="assets/video/Beta.mp4" autostart="FALSE" loop="0" width="700" height="400"
+            <embed src="assets/video/FIFA.mp4" autostart="FALSE" loop="0" width="700" height="400"
               allowfullscreen="TRUE">
           </div>
 
@@ -552,31 +552,39 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <h3>Contact me to talk</h3>
+          <h3>Send a message by filling out the form below</h3>
         </div>
 
         <div class="row justify-content-center">
 
           <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location</h4>
-                <p>Texas, United States</p>
+            <form action="/forms/showData.php" class="formulario" method="post"> 
+              <div class="field">
+                  <label for="nome">Name:</label>
+                  <input type="text" id="nome" name="nome" placeholder="Type your name*" required>
               </div>
-
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>Email</h4>
-                <p>phcarvalho050598@outlook.com</p>
+              
+              <div class="field">
+                  <label for="telefone">Telephone:</label>
+                  <input type="text" id="telefone" name="telefone" placeholder="Type your telephone">
               </div>
-
-              <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4>Telephone</h4>
-                <p>(956) 475-0302</p>
+      
+              <div class="field">
+                  <label for="email">E-Mail:</label>
+                  <input type="email" id="email" name="email" placeholder="Type your e-mail*" required>
+              </div>        
+              <div class="field radiobox">
+                  <span>Do you want to receive our news?</span>
+                  <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Yes</label>
+                  <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">No</label>
               </div>
-            </div>
+              <div class="field">
+                  <label for="mensagem">Your message: </label>
+                  <textarea name="mensagem" id="mensagem" placeholder="Message*" required></textarea>
+              </div>
+      
+              <input type="submit" name="acao" value="Send">
+          </form>
           </div>
 
         </div>
@@ -642,6 +650,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+
 
 </body>
 
